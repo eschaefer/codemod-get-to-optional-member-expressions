@@ -1,6 +1,12 @@
 {
-  "name": "get-transform",
+  "name": "codemod-get-to-optional-member-expressions",
   "version": "1.0.0",
+  "description": "Codemod to change Lodash `get` functions to optional member expressions",
+  "author": {
+    "name": "Eric Schaefer",
+    "email": "omg@eric-schaefer.com",
+    "url": "https://github.com/eschaefer"
+  },
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
@@ -13,13 +19,11 @@
     "jscodeshift-ava-tester": "^1.1.1"
   },
   "scripts": {
-    "mod": "jscodeshift -t ./lodash-get-to-optional-member-expressions.js ./test.js",
     "test": "ava ./tests"
   },
   "ava": {
     "require": [
       "@babel/register"
     ]
-  },
-  "devDependencies": {}
+  }
 }
