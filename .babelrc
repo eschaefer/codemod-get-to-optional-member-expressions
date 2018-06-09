@@ -1,0 +1,4 @@
+{
+  "plugins": ["@babel/plugin-proposal-optional-chaining"],
+  "presets": [["@babel/preset-stage-0", { "decoratorsLegacy": true }]]
+}

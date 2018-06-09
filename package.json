@@ -1,0 +1,25 @@
+{
+  "name": "get-transform",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0-beta.49",
+    "@babel/preset-stage-0": "^7.0.0-beta.49",
+    "@babel/register": "^7.0.0-beta.49",
+    "ava": "^1.0.0-beta.5.1",
+    "jscodeshift": "^0.5.1",
+    "jscodeshift-ava-tester": "^1.1.1"
+  },
+  "scripts": {
+    "mod": "jscodeshift -t ./lodash-get-to-optional-member-expressions.js ./test.js",
+    "test": "ava ./tests"
+  },
+  "ava": {
+    "require": [
+      "@babel/register"
+    ]
+  },
+  "devDependencies": {}
+}
