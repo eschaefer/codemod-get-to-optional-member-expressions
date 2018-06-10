@@ -5,7 +5,7 @@ This repository contains a codemod script for use with
 
 ### Overview
 
-The codemod replaces calls to Lodash's [get](https://lodash.com/docs#get) method with the proposed new [optional chaining proposal](https://claudepache.github.io/es-optional-chaining/) for ECMAScript. This is a novel new way to reliably access deeply nested object properties, and can be used now with [@babel/plugin-proposal-optional-chaining](https://new.babeljs.io/docs/en/next/babel-plugin-proposal-optional-chaining.html).
+The codemod replaces calls to Lodash's [get](https://lodash.com/docs#get) method with the native [optional chaining proposal](https://claudepache.github.io/es-optional-chaining/) for ECMAScript. This is a novel new way to reliably access deeply nested object properties, and can be used now with [@babel/plugin-proposal-optional-chaining](https://new.babeljs.io/docs/en/next/babel-plugin-proposal-optional-chaining.html).
 
 ```javascript
 const foo = get(data, 'crate.box.present.wrapping.color');
